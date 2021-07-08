@@ -19,7 +19,7 @@ while True:
   # 3ビットの右シフト
   data = data >> 3
 
-  with open('temp.csv', 'w') as f:
+  with open('temp.csv', 'a') as f:
     # 16で割って温度に
     print(data/16., file=f)
 
